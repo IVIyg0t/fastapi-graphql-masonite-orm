@@ -5,7 +5,7 @@ from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from jose import JWTError, jwt
 
-from models.api.Token import Token, TokenData
+from models.api.Token import TokenData
 from models.api.User import UserModel
 from src.common import get_user
 
