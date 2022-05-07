@@ -4,7 +4,7 @@ from masoniteorm.seeds import Seeder
 
 from models.db.Post import Post
 from models.db.User import User
-from src.middleware import get_password_hash
+from src.common import get_password_hash
 
 
 class UserTableSeeder(Seeder):
