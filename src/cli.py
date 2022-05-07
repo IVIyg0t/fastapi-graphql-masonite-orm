@@ -19,6 +19,11 @@ def refresh(seeder: str):
 
 
 @app.command()
+def start():
+    os.system("uvicorn src.api:app --reload")
+
+
+@app.command()
 def hello(name: str):
     typer.echo(f"Hello {name}")
 
